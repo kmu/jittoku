@@ -5,6 +5,10 @@ description = "Useful scripts for QE etc."
 authors = ["Koki Muraoka <koki.muraoka@gmail.com>"]
 license = "MIT"
 
+[tool.poetry.plugins."jittoku.commands"]
+"json2entries"= "jittoku.cli.json2entries:main"
+"entries2json"= "jittoku.cli.entries2json:main"
+
 [tool.poetry.dependencies]
 python = "^3.7"
 ase = "^3.21.1"
